@@ -1,0 +1,67 @@
+Program Version,EnergyPlus, Version 8.6.0-198c6a3cff, YMD=2017.10.25 15:19,IDD_Version 8.6.0
+   ** Warning ** Sizing:Parameters: note Timesteps in Averaging Window entered value=[1] is less than 1 hour (i.e., 6 timesteps).
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** Weather file location will be used rather than entered (IDF) Location object.
+   **   ~~~   ** ..Location object=4 ARCHITECTURE DR_ SINGAPORE 117566_ SINGAPORE
+   **   ~~~   ** ..Weather File Location=SINGAPORE - SGP IWEC Data WMO#=486980
+   **   ~~~   ** ..due to location differences, Latitude difference=[6.09E-002] degrees, Longitude difference=[0.11] degrees.
+   **   ~~~   ** ..Time Zone difference=[8.0] hour(s), Elevation difference=[58.99] percent, [23.01] meters.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="T-1-4-I-F-6", in Zone="AIM0015:AIM0033".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Severe  ** BuildingSurface:Detailed="T-1-4-I-F-6_REVERSED", invalid Outside Boundary Condition Object=<blank>.
+   **   ~~~   ** ..Outside Boundary Condition="Surface" must be non-blank.
+   **   ~~~   ** ..This surface will become an adiabatic surface - no doors/windows allowed.
+   ** Severe  ** BuildingSurface:Detailed="X-1-5-I-O-7_REVERSED", invalid Outside Boundary Condition Object=<blank>.
+   **   ~~~   ** ..Outside Boundary Condition="Surface" must be non-blank.
+   **   ~~~   ** ..This surface will become an adiabatic surface - no doors/windows allowed.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="X-1-5-I-O-7_REVERSED", in Zone="AIM0024:AIM0206".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Severe  ** BuildingSurface:Detailed="X-2-5-I-O-13_REVERSED", invalid Outside Boundary Condition Object=<blank>.
+   **   ~~~   ** ..Outside Boundary Condition="Surface" must be non-blank.
+   **   ~~~   ** ..This surface will become an adiabatic surface - no doors/windows allowed.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="X-2-5-I-O-13_REVERSED", in Zone="AIM0024:AIM0206".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Severe  ** GetSurfaceData: Construction PROJECT INTERNAL FLOOR of interzone surface T-1-4-I-F-6 does not have the same number of layers as the construction PROJECT PARTITION_REVERSED of adjacent surface T-1-4-I-F-6_REVERSED
+   **   ~~~   ** ...this problem for this pair will not be reported again.
+   ** Warning ** GetSurfaceData: InterZone Surface Tilts do not match as expected.
+   **   ~~~   **   Tilt=0.0 in Surface=T-1-4-I-F-6, Zone=AIM0015:AIM0033
+   **   ~~~   **   Tilt=0.0 in Surface=T-1-4-I-F-6_REVERSED, Zone=AIM0024:AIM0164
+   ** Warning ** GetSurfaceData: InterZone Surface Classes do not match as expected.
+   **   ~~~   ** Surface="T-1-4-I-F-6", surface class=Roof
+   **   ~~~   ** Adjacent Surface="T-1-4-I-F-6_REVERSED", surface class=Roof
+   **   ~~~   ** Other errors/warnings may follow about these surfaces.
+   ** Warning ** GetSurfaceData: InterZone Surface Tilts do not match as expected.
+   **   ~~~   **   Tilt=0.0 in Surface=X-1-5-I-O-7, Zone=AIM0015:AIM0033
+   **   ~~~   **   Tilt=0.0 in Surface=X-1-5-I-O-7_REVERSED, Zone=AIM0024:AIM0206
+   ** Warning ** GetSurfaceData: InterZone Surface Classes do not match as expected.
+   **   ~~~   ** Surface="X-1-5-I-O-7", surface class=Roof
+   **   ~~~   ** Adjacent Surface="X-1-5-I-O-7_REVERSED", surface class=Roof
+   **   ~~~   ** Other errors/warnings may follow about these surfaces.
+   ** Warning ** GetSurfaceData: InterZone Surface Tilts do not match as expected.
+   **   ~~~   **   Tilt=0.0 in Surface=X-2-5-I-O-13, Zone=AIM0015:AIM0075
+   **   ~~~   **   Tilt=0.0 in Surface=X-2-5-I-O-13_REVERSED, Zone=AIM0024:AIM0206
+   ** Warning ** GetSurfaceData: InterZone Surface Classes do not match as expected.
+   **   ~~~   ** Surface="X-2-5-I-O-13", surface class=Roof
+   **   ~~~   ** Adjacent Surface="X-2-5-I-O-13_REVERSED", surface class=Roof
+   **   ~~~   ** Other errors/warnings may follow about these surfaces.
+   ** Warning ** GetSurfaceData: There are 9 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Severe  ** GetSurfaceData: There are 2 degenerate surfaces; Degenerate surfaces are those with number of sides < 3.
+   **   ~~~   ** These surfaces should be deleted.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   **  Fatal  ** GetSurfaceData: Errors discovered, program terminates.
+   ...Summary of Errors that led to program termination:
+   ..... Reference severe error count=6
+   ..... Last severe error=GetSurfaceData: There are 2 degenerate surfaces; Degenerate surfaces are those with number of sides < 3.
+   ************* Warning:  Node connection errors not checked - most system input has not been read (see previous warning).
+   ************* Fatal error -- final processing.  Program exited before simulations began.  See previous error messages.
+   ** Warning ** DXFOut: Could not triangulate surface="W-3-4-I-W-22_REVERSED", type="Wall", check surface vertex order(entry)
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual surfaces.
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* InterZone Surface Tilts -- mismatch
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 12 Warning; 4 Severe Errors.
+   ************* EnergyPlus Terminated--Fatal Error Detected. 21 Warning; 6 Severe Errors; Elapsed Time=00hr 00min  0.37sec

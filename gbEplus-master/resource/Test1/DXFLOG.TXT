@@ -1,0 +1,8 @@
+DDS-CAD Viewer
+Version 12 Win32 build 30/12-2015
+=== Start of log ===
+Loading 'C:\Users\bdgnnt\Songchao\gbEplus-master\gbEplus-master\gbEplus-master\resource\test.dxf'...
+DWG/DXF version: 12
+File Format: DXF-Text
+Checking file...
+=== End of log ===
